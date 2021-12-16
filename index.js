@@ -41,3 +41,7 @@ const reducers = combineReducers({
 
 const storeTwo = createStore(reducers);
 console.log(JSON.stringify(storeTwo.getState()));
+
+storeTwo.subscribe(() => {
+  console.log(storeTwo.getState());
+})
