@@ -1,6 +1,11 @@
 const Redux = require('redux');
 
-const reducer = (state = { login: false, email: '' }) => {
+const ESTADO_INICIAL = {
+  login: false,
+  email: '',
+};
+
+const reducer = (state = ESTADO_INICIAL) => {
   return state;
 };
 
